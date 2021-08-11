@@ -4,37 +4,28 @@
         <style>
             #my-box{
                 display: flex;
-                border: 1px solid black;
-                width: 85px;
-                height: 85px;
+                border: 2px solid black;
+                width: 25%;
+                font-size: 8vw;
             }
 
-            #my-words{
-                position: relative;
-                left: 7px;
-                top: -85px;
-                font-size: x-large;
-                font-family: sans-serif;
+            #my-box:after {
+                content: "";
+                display: block;
+                padding-bottom: 100%;
             }
 
             a{
                 text-decoration: none;
                 color: inherit;
             }
-
-            p { margin: 0px; }
-
-            body { padding: 100px; }
         </style>
     </head>
     <body>
-        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">
-            <div id="my-box"></div>
-            <div id="my-words">
-                <p>CSS</p>
-                <p>IS</p>
-                <p>AWESOME</p>
-            </div>
+        <a href="https://css-tricks.com/css-is-awesome/">
+            <div id="my-box">
+                CSS <br> IS <br> AWESOME
+        </div>
         </a>
     </body>
 </html>
